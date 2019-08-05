@@ -88,6 +88,7 @@ No se implementó autenticación por token o JWT por cuestión de tiempo, pero a
 
 &nbsp;
 **9. CONSIDERACIONES**
+
 Para evitar duplicidad de usuarios, se realiza validación con el campo e-mail.
 
 Se omitió la instalación de algún microservicio adicional, que sirviera como centralizador o sincronizador de los dos microservicios desarrollados.
