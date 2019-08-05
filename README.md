@@ -1,6 +1,6 @@
-# 1.PRUEBA TÉCNICA PARA PLAYVOX Agosto de 2019 Mario Fernando Espinosa - mario.f.espinosa@gmail.com
+# # 1.PRUEBA TÉCNICA PARA PLAYVOX Agosto de 2019 Mario Fernando Espinosa - mario.f.espinosa@gmail.com # #
 
-
+&nbsp;
 **1.DESCRIPCIÓN**
 
 Se desarrolló un proyecto que permite efectuar operaciones CRUD de usuarios a través de Servicios Web RestFul, para esto se implementaron cuatro (4) contenedores, los cuales se explican a continuación:
@@ -10,7 +10,7 @@ Se desarrolló un proyecto que permite efectuar operaciones CRUD de usuarios a t
 3 Contenedor: MongoDB, se aloja la base de datos _Users_.
 4 Contenedor: MongoDB. se aloja la base de datos _Notes_.
 
-
+&nbsp;
 **2.CONFIGURACIÓN**
 
 Cada microservicio fue desplegado en un contenedor (en modo Debug).El 1er contenedor corre en el puerto 8000, el 2do contenedor corre en el puerto 8001. Ambos se configuraron para correr en _localhost._ Las bases de datos corren en contenedores diferentes.
@@ -19,30 +19,34 @@ Se desarrolló una página web muy básica en el framework Vue.js, para consumir
 
 Los puertos 8000 y 8001 no estén pueden estar ocupados en el equipo.
 
-
+&nbsp;
 **3.VERSIONAMIENTO**
 
-docker Server v. 19.03.1 docker Client v. 19.03.1 
-docker compose version 1.21.0-3 
-mongoDB v. 4.0.11 
-django v. 2.2.3 
-django rest framework v. 3.10.2 
-djongo v. 1.2.33
+docker Server v. 19.03.1 docker Client v. 19.03.1 &nbsp;
+docker compose version 1.21.0-3 &nbsp;
+mongoDB v. 4.0.11 &nbsp;
+django v. 2.2.3 &nbsp;
+django rest framework v. 3.10.2 &nbsp;
+djongo v. 1.2.33 &nbsp;
 
-
+&nbsp;
 **4. INSTALACIÓN**
 
 Descargar y descomprimir los archivos y proyectos del repositorio GitHub. Luego, ingresar a la carpeta _userservices_ y ejecutar los siguientes comandos:
 
-**docker build -t userservices .
+```
+docker build -t userservices .
 
-**docker-compose up -d**
+docker-compose up -d**
+```
 
 Luego, ingresar a la carpeta _noteservicces_ y ejecutar los siguientes comandos:
 
-**docker build -t noteservices .**
+```
+docker build -t noteservices .
 
-**docker-compose up -d**
+docker-compose up -d
+```
 
 Verificar que los cuatro contenedores estén instalados y corriendo, para esto se ejecuta el comando: docker ps
 
@@ -50,10 +54,12 @@ Abrir la página **users.html** o a través de postman se puede verificar el fun
 
 También tengo subidas las imágenes al repositorio Docker Hub, por lo tanto, es posible descargarlas y luego ejecutar el **docker-compose.yml** que se encuentra en cada carpeta.
 
-**docker pull maresp85/testplayvox:userservices **
-**docker pull maresp85/testplayvox:noteservices**
+```
+docker pull maresp85/testplayvox:userservices
+docker pull maresp85/testplayvox:noteservices
+```
 
-
+&nbsp;
 **5. URIs**
 
 | **GET** (listar usuarios), **POST** (crear usuarios), **PUT** (actualizar usuarios),   **DELETE** (borrar usuarios) | http://localhost:8000/v1/users/ |
@@ -63,24 +69,24 @@ También tengo subidas las imágenes al repositorio Docker Hub, por lo tanto, es
 | **GET** (con parámetro id, para búsqueda de notas de un sólo usuario) | [http://localhost:8001/v1/notes/1](http://localhost:8001/v1/notes/1) |
 | **POST** (para crear notas) | http://localhost:8001/v1/notes |
 
-
+&nbsp;
 **6. TESTING**
 
 Se efectuaron pruebas con el aplicativo POSTMAN de cada una de las URI con sus correspondientes métodos.
 
-
+&nbsp;
 **7. PAGINACIÓN**
 
 A modo de demostración, la URI: [http://localhost:8000/v1/userslist/](http://localhost:8000/v1/userslist/), retorna todos los usuarios y la información para realizar la paginación en el frontend indicando cantidad de usuarios en la página, total de páginas, siguiente y previa URI.
 
 Nota: En la página cliente básica users.html (vue.js), no se utilizó esta URI.
 
- 
+ &nbsp;
 **8. AUTENTICACIÓN**
 
 No se implementó autenticación por token o JWT por cuestión de tiempo, pero ambos métodos los he implementado en otros proyectos.
 
-
+&nbsp;
 **9. CONSIDERACIONES**
 
 Se omitió la instalación de algún microservicio adicional, que sirviera como centralizador o sincronizador de los dos microservicios desarrollados.
