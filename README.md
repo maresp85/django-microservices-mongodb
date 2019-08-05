@@ -1,4 +1,4 @@
-# # 1.PRUEBA TÉCNICA PARA PLAYVOX Agosto de 2019 Mario Fernando Espinosa - mario.f.espinosa@gmail.com # #
+# # PRUEBA TÉCNICA PARA PLAYVOX Agosto de 2019 Mario Fernando Espinosa - mario.f.espinosa@gmail.com
 
 &nbsp;
 **1.DESCRIPCIÓN**
