@@ -1,5 +1,6 @@
 # # PRUEBA TÉCNICA PARA PLAYVOX Agosto de 2019 Mario Fernando Espinosa - mario.f.espinosa@gmail.com
 
+
 &nbsp;
 **1.DESCRIPCIÓN**
 
@@ -19,15 +20,25 @@ Se desarrolló una página web muy básica en el framework Vue.js, para consumir
 
 Los puertos 8000 y 8001 no estén pueden estar ocupados en el equipo.
 
+
 &nbsp;
 **3.VERSIONAMIENTO**
 
-docker Server v. 19.03.1 docker Client v. 19.03.1 &nbsp;
-docker compose version 1.21.0-3 &nbsp;
+docker Server v. 19.03.1 docker Client v. 19.03.1 
+
+&nbsp;
+docker compose version 1.21.0-3 
+
+&nbsp;
 mongoDB v. 4.0.11 &nbsp;
 django v. 2.2.3 &nbsp;
-django rest framework v. 3.10.2 &nbsp;
-djongo v. 1.2.33 &nbsp;
+django rest framework v. 3.10.2 
+
+&nbsp;
+djongo v. 1.2.33 
+
+&nbsp;
+
 
 &nbsp;
 **4. INSTALACIÓN**
@@ -59,6 +70,8 @@ docker pull maresp85/testplayvox:userservices
 docker pull maresp85/testplayvox:noteservices
 ```
 
+
+
 &nbsp;
 **5. URIs**
 
@@ -69,10 +82,14 @@ docker pull maresp85/testplayvox:noteservices
 | **GET** (con parámetro id, para búsqueda de notas de un sólo usuario) | [http://localhost:8001/v1/notes/1](http://localhost:8001/v1/notes/1) |
 | **POST** (para crear notas) | http://localhost:8001/v1/notes |
 
+
+
 &nbsp;
 **6. TESTING**
 
 Se efectuaron pruebas con el aplicativo POSTMAN de cada una de las URI con sus correspondientes métodos.
+
+
 
 &nbsp;
 **7. PAGINACIÓN**
@@ -81,15 +98,19 @@ A modo de demostración, la URI: [http://localhost:8000/v1/userslist/](http://lo
 
 Nota: En la página cliente básica users.html (vue.js), no se utilizó esta URI.
 
- &nbsp;
+
+
+&nbsp;
 **8. AUTENTICACIÓN**
 
 No se implementó autenticación por token o JWT por cuestión de tiempo, pero ambos métodos los he implementado en otros proyectos.
 
+
+
 &nbsp;
 **9. CONSIDERACIONES**
 
-Para evitar duplicidad de usuarios, se realiza validación con el campo e-mail.
+Para evitar duplicidad de usuarios, se realiza validación con el campo e-mail. La búsqueda de usuario se configuró con el campo first_name.
 
 Se omitió la instalación de algún microservicio adicional, que sirviera como centralizador o sincronizador de los dos microservicios desarrollados.
 
