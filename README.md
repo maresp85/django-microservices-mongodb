@@ -24,21 +24,16 @@ Los puertos 8000 y 8001 no estén pueden estar ocupados en el equipo.
 &nbsp;
 **3.VERSIONAMIENTO**
 
+
+```
 docker Server v. 19.03.1 docker Client v. 19.03.1 
-
-&nbsp;
 docker compose version 1.21.0-3 
-
-&nbsp;
-mongoDB v. 4.0.11 &nbsp;
-django v. 2.2.3 &nbsp;
+mongoDB v. 4.0.11
+django v. 2.2.3
 django rest framework v. 3.10.2 
-
-&nbsp;
 djongo v. 1.2.33 
 
-&nbsp;
-
+```
 
 &nbsp;
 **4. INSTALACIÓN**
@@ -48,7 +43,7 @@ Descargar y descomprimir los archivos y proyectos del repositorio GitHub. Luego,
 ```
 docker build -t userservices .
 
-docker-compose up -d**
+docker-compose up -d
 ```
 
 Luego, ingresar a la carpeta _noteservicces_ y ejecutar los siguientes comandos:
