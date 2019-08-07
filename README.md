@@ -7,10 +7,20 @@
 Se desarrolló un proyecto que permite efectuar operaciones CRUD de usuarios a través de Servicios Web RestFul, para esto se implementaron cuatro (4) contenedores, los cuales se explican a continuación:
 
 1 Contenedor: Ejecuta el microservicio _UserServices_ que permite efectuar CRUD de usuarios. Fue desarrollado en el framework Django, este se conecta a la Base de Datos _Users_ en el motor MongoDB, esta base de datos se encuentra en un contenedor diferente.
+
+&nbsp;
 2 Contenedor: Ejecuta el microservicio _NoteServices_ que permite listar o crear notas de usuarios. Fue desarrollado en el framework Django, este se conecta a la Base de Datos _Notes_ en el motor MongoDB, esta base de datos se encuentra en un contenedor diferente.
+
+&nbsp;
 3 Contenedor: MongoDB, se aloja la base de datos _Users_.
+
+&nbsp;
 4 Contenedor: MongoDB. se aloja la base de datos _Notes_.
 
+&nbsp;
+
+
+&nbsp;
 &nbsp;
 **2.CONFIGURACIÓN**
 
@@ -21,6 +31,7 @@ Se desarrolló una página web muy básica en el framework Vue.js, para consumir
 Los puertos 8000 y 8001 no estén pueden estar ocupados en el equipo.
 
 
+&nbsp;
 &nbsp;
 **3.VERSIONAMIENTO**
 
@@ -35,6 +46,7 @@ djongo v. 1.2.33
 
 ```
 
+&nbsp;
 &nbsp;
 **4. INSTALACIÓN**
 
@@ -66,7 +78,7 @@ docker pull maresp85/testplayvox:noteservices
 ```
 
 
-
+&nbsp;
 &nbsp;
 **5. URIs**
 
@@ -78,14 +90,14 @@ docker pull maresp85/testplayvox:noteservices
 | **POST** (para crear notas) | http://localhost:8001/v1/notes |
 
 
-
+&nbsp;
 &nbsp;
 **6. TESTING**
 
 Se efectuaron pruebas con el aplicativo POSTMAN de cada una de las URI con sus correspondientes métodos.
 
 
-
+&nbsp;
 &nbsp;
 **7. PAGINACIÓN**
 
@@ -101,7 +113,7 @@ Nota: En la página cliente básica users.html (vue.js), no se utilizó esta URI
 No se implementó autenticación por token o JWT por cuestión de tiempo, pero ambos métodos los he implementado en otros proyectos.
 
 
-
+&nbsp;
 &nbsp;
 **9. CONSIDERACIONES**
 
