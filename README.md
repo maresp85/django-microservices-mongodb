@@ -63,7 +63,7 @@ docker build -t userservices .
 docker-compose up -d
 ```
 
-Luego, ingresar a la carpeta _noteservicces_ y ejecutar los siguientes comandos:
+Luego, ingresar a la carpeta _noteservices_ y ejecutar los siguientes comandos:
 
 ```
 docker build -t noteservices .
