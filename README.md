@@ -1,7 +1,8 @@
 # PRUEBA TÉCNICA PARA PLAYVOX Agosto de 2019 Mario Fernando Espinosa - mario.f.espinosa@gmail.com
 
-
 &nbsp;
+&nbsp;
+
 **1.DESCRIPCIÓN**
 
 Se desarrolló un proyecto que permite efectuar operaciones CRUD de usuarios a través de Servicios Web RestFul, para esto se implementaron cuatro (4) contenedores, los cuales se explican a continuación:
@@ -17,11 +18,11 @@ Se desarrolló un proyecto que permite efectuar operaciones CRUD de usuarios a t
 &nbsp;
 4 Contenedor: MongoDB. se aloja la base de datos _Notes_.
 
-&nbsp;
 
 
 &nbsp;
 &nbsp;
+
 **2.CONFIGURACIÓN**
 
 Cada microservicio fue desplegado en un contenedor (en modo Debug).El 1er contenedor corre en el puerto 8000, el 2do contenedor corre en el puerto 8001. Ambos se configuraron para correr en _localhost._ Las bases de datos corren en contenedores diferentes.
@@ -34,6 +35,7 @@ Los puertos 8000 y 8001 no estén pueden estar ocupados en el equipo.
 
 &nbsp;
 &nbsp;
+
 **3.VERSIONAMIENTO**
 
 
