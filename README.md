@@ -38,7 +38,7 @@ djongo v. 1.2.33
 &nbsp;
 **4. INSTALACIÓN**
 
-Descargar y descomprimir los archivos y proyectos del repositorio GitHub. Luego, ingresar a la carpeta _userservices_ y ejecutar los siguientes comandos:
+Una vez descargado las carpetas del proyecto, se debe ingresar a la carpeta _userservices_ y ejecutar los siguientes comandos:
 
 ```
 docker build -t userservices .
