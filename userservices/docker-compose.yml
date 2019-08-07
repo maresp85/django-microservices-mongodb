@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+      userservices:
+        image: userservices
+        container_name: userservices
+        command: "bash -c 'python manage.py migrate --no-input && python manage.py runserver 0.0.0.0:8000'"
+        ports:
+          - 8000:8000
+        depends_on:
+          - mongo
+        restart: always
+        links:
+          - mongo
+      
+      mongo:
+        image: mongo
+        container_name: mongoplayvox
+        environment:
+          - MONGODB_DATABASE=users
+        volumes:
+          - ./db:/var/lib/mongo
+        restart: always
