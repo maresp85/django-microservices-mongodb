@@ -31,6 +31,7 @@ Se desarrolló una página web muy básica en el framework Vue.js, para consumir
 Los puertos 8000 y 8001 no estén pueden estar ocupados en el equipo.
 
 
+
 &nbsp;
 &nbsp;
 **3.VERSIONAMIENTO**
@@ -48,6 +49,7 @@ djongo v. 1.2.33
 
 &nbsp;
 &nbsp;
+
 
 **4. INSTALACIÓN**
 
@@ -111,6 +113,7 @@ Nota: En la página cliente básica users.html (vue.js), no se utilizó esta URI
 
 
 
+&nbsp;
 &nbsp;
 
 **8. AUTENTICACIÓN**
