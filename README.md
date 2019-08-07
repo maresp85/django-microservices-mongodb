@@ -1,4 +1,4 @@
-# # PRUEBA TÉCNICA PARA PLAYVOX Agosto de 2019 Mario Fernando Espinosa - mario.f.espinosa@gmail.com
+# PRUEBA TÉCNICA PARA PLAYVOX Agosto de 2019 Mario Fernando Espinosa - mario.f.espinosa@gmail.com
 
 
 &nbsp;
@@ -48,6 +48,7 @@ djongo v. 1.2.33
 
 &nbsp;
 &nbsp;
+
 **4. INSTALACIÓN**
 
 Una vez descargado las carpetas del proyecto, se debe ingresar a la carpeta _userservices_ y ejecutar los siguientes comandos:
@@ -80,6 +81,7 @@ docker pull maresp85/testplayvox:noteservices
 
 &nbsp;
 &nbsp;
+
 **5. URIs**
 
 | **GET** (listar usuarios), **POST** (crear usuarios), **PUT** (actualizar usuarios),   **DELETE** (borrar usuarios) | http://localhost:8000/v1/users/ |
@@ -92,6 +94,7 @@ docker pull maresp85/testplayvox:noteservices
 
 &nbsp;
 &nbsp;
+
 **6. TESTING**
 
 Se efectuaron pruebas con el aplicativo POSTMAN de cada una de las URI con sus correspondientes métodos.
@@ -99,6 +102,7 @@ Se efectuaron pruebas con el aplicativo POSTMAN de cada una de las URI con sus c
 
 &nbsp;
 &nbsp;
+
 **7. PAGINACIÓN**
 
 A modo de demostración, la URI: [http://localhost:8000/v1/userslist/](http://localhost:8000/v1/userslist/), retorna todos los usuarios y la información para realizar la paginación en el frontend indicando cantidad de usuarios en la página, total de páginas, siguiente y previa URI.
@@ -108,6 +112,7 @@ Nota: En la página cliente básica users.html (vue.js), no se utilizó esta URI
 
 
 &nbsp;
+
 **8. AUTENTICACIÓN**
 
 No se implementó autenticación por token o JWT por cuestión de tiempo, pero ambos métodos los he implementado en otros proyectos.
@@ -115,6 +120,7 @@ No se implementó autenticación por token o JWT por cuestión de tiempo, pero a
 
 &nbsp;
 &nbsp;
+
 **9. CONSIDERACIONES**
 
 Para evitar duplicidad de usuarios, se realiza validación con el campo e-mail. La búsqueda de usuario se configuró con el campo first_name.
